@@ -2,11 +2,19 @@ body{ /*Selector del body*/
     background: #CCCCCC;
 }
 
+h1{
+    text-align: center;
+}
+
 p{/* Selector p*/
     text-align: center;
     background: #CCCCCC;
 }
 
- em strong{
+ em strong{/*selector de las etiquetas padre em e hijo strong*/
     color: red;
+}
+
+#mision{
+    font-size: 20px;
 }
