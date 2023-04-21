@@ -1,8 +1,12 @@
+body{ /*Selector del body*/
+    background: #CCCCCC;
+}
+
 p{/* Selector p*/
     text-align: center;
     background: #CCCCCC;
 }
 
-body{
-    background: #CCCCCC;
+ em strong{
+    color: red;
 }
