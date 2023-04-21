@@ -1,8 +1,11 @@
 body{ /*Selector del body*/
-    background: #CCCCCC;
+    background: #FFFFFF;
 }
 #banner{
     width:100%;
+}
+.principal{
+    background: #CCCCCC;
 }
 h1{
     text-align: center;
@@ -19,6 +22,13 @@ p{/* Selector p*/
 
 #mision{
     font-size: 20px;
+}
+
+.diferenciales{
+    background: #FFFFFF;
+}
+h2{
+    text-align: center;
 }
 /*Para referenciar clases empezamos con un punto*/
 .items{
