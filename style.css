@@ -1,9 +1,11 @@
 .titulo-principal{
     padding-left: 30%;
 }
+
 #banner{
     width:100%;
 }
+
 .principal{
     background: #CCCCCC;
     padding: 20px;
@@ -12,6 +14,7 @@
 .titulo-centralizado{
     text-align: center;
 }
+
 p{/* Selector p*/
     text-align: center;
     background: #CCCCCC;
