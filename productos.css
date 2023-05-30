@@ -28,6 +28,11 @@ nav a{
     text-decoration: none;
 }
 
+nav a:hover{ /*captura el evento del movimiento del mouse*/
+    color: #C78C19;
+    text-decoration: underline;
+}
+
 .productos{
     width: 940px;
     margin: 0 auto;
@@ -54,6 +59,20 @@ nav a{
 
     border-radius: 10px;
 
+}
+
+.productos li:hover{ /*movimiento del mouse*/
+    border-color: #C78C19;
+    /*font-size: 33px; se debe hacer un selector que reemplace la instruccion del  .productos li{} porque es más general y css lo toma primero*/
+
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.productos li:active{ /*click del mouse sobre el objeto*/
+    border-color: #088c19;
 }
 
 .productos h2{
