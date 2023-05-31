@@ -51,7 +51,6 @@ nav a:hover{ /*captura el evento del movimiento del mouse*/
     margin: 0 1.5%;
     padding: 30px 20px;
     box-sizing: border-box; 
-
     border: 2px solid #000000;
     /*
     border-color: #000000;
@@ -182,22 +181,6 @@ td , th{
     margin: 0 0 1em;
     clear: left; /*No se ven afectados los títulos por estílos en imágenes*/
 }
-/*
-.titulo-principal:first-letter{
-    font-weight: bold;
-} La primer letra se pone en negrita
-
-.titulo-principal:before{
-    content: "["
-}
-
-.titulo-principal:after{
-    content: "]"
-} En todas las clases de titulo principal va a poner corchetes después del contenido
-*/
-p:first-line{ 
-    font-style: italic;
-} El primer renglon del parrafo se pone en italica
 
 .principal p{
     margin: 0 0 1em;
@@ -217,14 +200,14 @@ p:first-line{
     margin: 0 20px 20px 0; /*superior derecha inferior izquierda*/
 }
 
-.mapa p{
-    margin: 0 0 2em;
-    text-align: center;
-}
-
 .mapa{
     padding: 3em 0;
     background: linear-gradient(#FEFEFE,#888888);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
 }
 
 .mapa-contenido{
@@ -253,8 +236,12 @@ p:first-line{
     line-height: 1.5;  /*interlineado de 1.5% respecto al tamaño padrón*/
 }
 
+.items:before{
+    content:"★"
+}
+
 .items:first-child{ /*primer elemento de items*/
-    font-weight: bold ;
+    font-weight: bold;
 }
 
 /*.items:nth-child(n) especifica el n esimo elemento*/
@@ -268,3 +255,25 @@ p:first-line{
     margin: 1em auto;
 
 }
+
+/*Se pueden hacer calculos con calc()
+es util para imagenes, por ejemplo calc(40%-26px), se va a ajustar el tamaño de la imagen dependiendo de la resolución de pantalla del usuario*/
+
+/*
+Selectores avanzados 
+
+> accede a los hijos de elemento por ejemplo para acceder a todos los p dentro de main
+
+main>p{
+
+}
+
++ para acceder al orimer hermano del elemento, por ejemplo para acceder al primer p despues de una img
+img+p{
+
+}
+
+~ para acceder a todos los elementos hermanos de determinado elemento
+
+not(#id o #class) para acceder a todos los elementos excepto el de los paréntesis
+*/
