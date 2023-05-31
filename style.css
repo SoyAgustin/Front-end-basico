@@ -180,6 +180,8 @@ td , th{
     font-size: 2em; /*multiplica el tamaño de fuente padrón*/
     margin: 0 0 1em;
     clear: left; /*No se ven afectados los títulos por estílos en imágenes*/
+    color: rgba(0,0,0,1); /*rgba tiene los parametros rgb y a que es el coeficiente de opacidad entre 0 y 1*/
+    /*text-shadow: ; sombras en textos*/
 }
 
 .principal p{
@@ -219,6 +221,7 @@ td , th{
 .diferenciales{
     padding: 3em 0;
     background: #888888; 
+    /*box-shadow: inset; sombras al recuadro completo de diferenciales(seccion)*/
 }
 
 .contenido-diferenciales{
@@ -248,6 +251,12 @@ td , th{
 
 .imagen-diferenciales{
     width: 60%;
+    box-shadow: 10px 10px 30px 10px #000000; /* -arriba -izquierda dfuminado expansion, separado por "," se pueden poner muchas sombras en otras direcciones y colores diferentes*/
+}
+
+.imagen-diferenciales:hover{
+    opacity: 30%;
+    transition: 400ms;
 }
 
 .video{
@@ -255,25 +264,3 @@ td , th{
     margin: 1em auto;
 
 }
-
-/*Se pueden hacer calculos con calc()
-es util para imagenes, por ejemplo calc(40%-26px), se va a ajustar el tamaño de la imagen dependiendo de la resolución de pantalla del usuario*/
-
-/*
-Selectores avanzados 
-
-> accede a los hijos de elemento por ejemplo para acceder a todos los p dentro de main
-
-main>p{
-
-}
-
-+ para acceder al orimer hermano del elemento, por ejemplo para acceder al primer p despues de una img
-img+p{
-
-}
-
-~ para acceder a todos los elementos hermanos de determinado elemento
-
-not(#id o #class) para acceder a todos los elementos excepto el de los paréntesis
-*/
